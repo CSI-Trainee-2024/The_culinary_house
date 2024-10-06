@@ -1,95 +1,40 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-    html,body{
-        font-family: sans-serif;
-        font-weight: 300;
-        line-height: 1.4;
-    }
-    ul{
-        list-style: none;
-    }
-    a{
-        text-decoration: none;
-        color:white;
-    }
-    .container{
-        max-width: 62.5rem;
-        margin: 0 auto;
-    }
-    header{
-        background-color: black;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-         box-shadow: 0.3125rem 0.3125rem 0.3125rem black; 
-         height:9.2rem;
-        justify-content: space-around;
-        align-items: center; 
-    
-    }
-    nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.25rem;
-        color: white;
-    }
-    nav ul{
-        display: flex;
-        gap: 1.25rem;
-    }
-    nav ul li{
-        border-bottom: 0.125rem solid transparent;
-        transition: 0.2s ease-in;
-    }
-    nav ul li:hover{
-        border-bottom: 0.125rem solid white;
-        transition: 0.2s ease-in;
-        cursor: pointer;
-    }
-    
-    
-    header nav img{
-        width:9.375rem;
-        cursor: pointer;
-    } 
-    *{
+      *{
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-        }
-        html,body{
+       }
+        body{
+
             font-family: sans-serif;
-            font-weight: 300;
-            line-height: 1.4;
-        }
-    main{
-        height: 1000px;
-        background-image: url(Images/b1.jpg);
-        background-position: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+             background-color: black; 
+             
+       }
+    h1{
         color:white;
+        font-size: 60px;
         text-align: center;
-        padding:1.5rem 0;
+        margin-top: 35px;
     }
+    
     span{
         color:red;
         font-family: cursive;
         font-size: 5rem;
     }
     .container{
-        max-width:960px; 
-        padding: 0 1.5rem;
+        margin-top: 50px;;
+        max-width:550px; 
+        padding: 5px 500px;
+        color:white;
+     
     }
     h2{
+        color:white;
         text-align:center;
         margin-bottom: 2rem auto;
         font-size: 2rem;
+      
     }
+    
     .form{
         margin-bottom: 1.5rem;
     }
@@ -101,20 +46,20 @@
    .form textarea{
         width:100%;
         padding:0.75rem;
-        border: 1px solid palevioletred;
+        border: 1px solid red;
         border-style:outset;
         resize: vertical;
     }
     .form input{
         width:100%;
         padding:0.75rem;
-        border: 1px solid palevioletred;
+        border: 1px solid red;
         border-style:outset;
     }
     .submit_btn{
         display:block;
         width:100%;
-        background-color: palevioletred;
+        background-color: red;
         color:black;
         border: none;
         padding: 1rem;
@@ -124,7 +69,7 @@
 
     }
     .submit_btn:hover{
-        background-color: pink;
+        background-color: rgb(115, 13, 13);
     }
     .footer_section{
         margin:10px;
