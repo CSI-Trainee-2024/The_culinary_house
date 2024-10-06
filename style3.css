@@ -24,7 +24,7 @@
         position: sticky;
         top: 0;
         z-index: 100;
-        box-shadow: 0.3125rem 0.3125rem 0.3125rem grey;
+        box-shadow: 0.3125rem 0.3125rem 0.3125rem palevioletred;
         height:9.2rem;
         justify-content: space-around;
         align-items: center;
@@ -116,9 +116,45 @@
     .submit_btn:hover{
         background-color: pink;
     }
-    
-    
-    
+    .footer_section{
+        margin:10px;
+        flex: 1;
+        min-width: 200px;
+    }
+    .footer_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: grey;
+    color:black;
+ }
+ .footer_section h4{
+    margin-bottom:10px;
+ }
+.footer_section p{
+    margin: 5px;
+}
+..footer_section ul{
+    margin: 5px;
+}
+.socialmedia_section ul{
+list-style: none;
+padding: 5px;
+}
+.socialmedia_section ul li{
+    display: inline;
+    margin-right:15px;
+}
+.socialmedia_section ul li a{
+    color:blue;
+    text-decoration: none;
+}
+.copyright{
+    text-align:center;
+    flex-basis:100%;
+    margin-top:20px;
+}
     
     
     
