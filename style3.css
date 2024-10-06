@@ -24,10 +24,10 @@
         position: sticky;
         top: 0;
         z-index: 100;
-        /* box-shadow: 0.3125rem 0.3125rem 0.3125rem black; */
-        height:9.2rem;
+         box-shadow: 0.3125rem 0.3125rem 0.3125rem black; 
+         height:9.2rem;
         justify-content: space-around;
-        align-items: center;
+        align-items: center; 
     
     }
     nav{
@@ -55,7 +55,17 @@
     header nav img{
         width:9.375rem;
         cursor: pointer;
-    }
+    } 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        html,body{
+            font-family: sans-serif;
+            font-weight: 300;
+            line-height: 1.4;
+        }
     main{
         height: 1000px;
         background-image: url(Images/b1.jpg);
