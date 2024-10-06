@@ -57,7 +57,16 @@
         width:9.375rem;
         cursor: pointer;
     }
-    
+    main{
+        background-image: url(Images/b1.jpg);
+        background-position: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:white;
+    }
+
+
+
     
     
     

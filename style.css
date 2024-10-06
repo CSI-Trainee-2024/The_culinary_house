@@ -65,7 +65,14 @@
       position: relative;
       top:8.125rem;  
     }
+    main .main .main_text{
+        font-size:30px;
+        position:relative;
+        top:-90px;
+        left:20px;
 
+    }
+    
 
 
 
