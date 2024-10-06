@@ -57,7 +57,28 @@
         width:9.375rem;
         cursor: pointer;
     }
-     
-    
-    
+    main{height: 1000px;
+        background-image: url(Images/b1.jpg);
+        background-position: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:white;
+        text-align: center;
+        padding:1.5rem 0;
+    }
+    .menu{
+        padding:0 10px 30px 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+        grid-gap:20px 40px;
+    }
+    .heading span{
+        font-size: 80px;
+        font-family: cursive;
+        color: red;
+        margin-bottom: 30px;
+        padding:30px;
+        grid-column:1/-1;
+        text-align:center;
+    }
      

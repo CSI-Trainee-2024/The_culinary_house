@@ -24,7 +24,7 @@
         position: sticky;
         top: 0;
         z-index: 100;
-        box-shadow: 0.3125rem 0.3125rem 0.3125rem palevioletred;
+        /* box-shadow: 0.3125rem 0.3125rem 0.3125rem black; */
         height:9.2rem;
         justify-content: space-around;
         align-items: center;
@@ -58,7 +58,7 @@
     }
     main{
         height: 1000px;
-        background-image: url(Images/b6.jpg);
+        background-image: url(Images/b1.jpg);
         background-position: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -67,7 +67,7 @@
         padding:1.5rem 0;
     }
     span{
-        color:palevioletred;
+        color:red;
         font-family: cursive;
         font-size: 5rem;
     }
@@ -126,8 +126,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
-    background-color: grey;
-    color:black;
+    background-color: black;
+    color:white;
  }
  .footer_section h4{
     margin-bottom:10px;
