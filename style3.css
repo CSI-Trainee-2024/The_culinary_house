@@ -67,7 +67,7 @@
         padding:1.5rem 0;
     }
     span{
-        color:red;
+        color:palevioletred;
         font-family: cursive;
         font-size: 5rem;
     }
@@ -91,12 +91,27 @@
    .form textarea{
         width:100%;
         padding:0.75rem;
-        border: 1px solid green;
+        border: 1px solid palevioletred;
+        border-style:outset;
+        resize: vertical;
     }
     .form input{
         width:100%;
         padding:0.75rem;
-        border: 1px solid grey;
+        border: 1px solid palevioletred;
+        border-style:outset;
+    }
+    .submit_btn{
+        display:block;
+        width:100%;
+        background-color: palevioletred;
+        color:black;
+        border: none;
+        padding: 1rem;
+        font-size: 1.2rem;
+        cursor:pointer;
+        border-radius:30px;
+
     }
 
     
