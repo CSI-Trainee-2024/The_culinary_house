@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
     border: none;
     text-decoration: none;
     transition:all 0.2s linear;
@@ -23,9 +22,10 @@ html{
     font-weight:400;
     font-size:30px;
     letter-spacing: 5px;
-    margin-bottom:10px;
+    margin-bottom:30px;
     text-transform: capitalize;
     text-align: center;
+
 }
 .heading span{
     font-size: 80px;
@@ -45,4 +45,74 @@ html{
 display:grid;
 grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
 gap: 2rem;
+}
+.container .food .foodie{
+    text-align: center;
+    padding: 3rem 2 rem;
+    background: black;
+    box-shadow:0 3px 2px red;
+    cursor: pointer;
+}
+.container .food .foodie:hover{
+    transform: scale(1.1);
+}
+.container .food .foodie img{
+    padding: 3rem;
+    height:30rem;
+}
+.container .food .foodie h3{
+    padding:2.5rem 0;
+    font-size: 2rem;
+    color:blue;
+}
+.container .food .foodie p{
+    font-size: 1.5rem;
+    color: white;
+}
+.price{
+    font-size:4rem;
+    padding: 2rem;
+    color:blue
+}
+
+.footer_section{
+    margin:10px;
+    flex: 1;
+    min-width: 200px;
+}
+.footer_container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin:3rem;
+padding: 20px;
+background-color: black;
+color:white;
+font-size: 1.25rem;
+}
+.footer_section h4{
+margin-bottom:10px;
+}
+.footer_section p{
+margin: 5px;
+}
+.footer_section ul{
+margin: 5px;
+}
+.socialmedia_section ul{
+list-style: none;
+padding: 5px;
+}
+.socialmedia_section ul li{
+display: inline;
+margin-right:15px;
+}
+.socialmedia_section ul li a{
+color:blue;
+text-decoration: none;
+}
+.copyright{
+text-align:center;
+flex-basis:100%;
+margin-top:20px;
 }
