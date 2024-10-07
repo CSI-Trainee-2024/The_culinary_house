@@ -6,6 +6,45 @@
        transition:all 0.2s linear;
        text-transform: capitalize;
     } 
+  
+    .logo{
+        font-size:2rem;
+        color:white;
+        letter-spacing: 0.08rem;
+    }
+    .logo span{
+        font-size:2.5rem;
+        color:red;
+        font-family: cursive;
+    }
+    .navbar{
+    
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top:0;
+        left:50%;
+        transform: translatex(-50%);
+        width:90%;
+        height:12vh;
+    
+    }
+    .navlist{
+        display: flex;
+        gap:2rem;
+       
+    }
+    .navlist li{
+        list-style: none;
+      
+    }
+    .navlist li a{
+        text-decoration: none;
+        color:white;
+        font-size: 1rem;
+        letter-spacing: 0.08rem;
+    }
     .hero{
         height:1000px;
         overflow: hidden;
