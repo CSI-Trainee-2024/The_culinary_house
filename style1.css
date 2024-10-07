@@ -3,6 +3,8 @@
        padding: 0px;
        box-sizing: border-box;
        font-family: sans-serif;
+       transition:all 0.2s linear;
+       text-transform: capitalize;
     } 
     .hero{
         height:1000px;
