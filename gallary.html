@@ -3,66 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - The Culinary House</title>
     <link rel="stylesheet" href="style4.css">
-    <link rel="icon"  href="/Images/Logo1.png" type="image/png">
-    <title>Gallary</title>
+    <link rel="icon" href="https://images.unsplash.com/photo-1514326640560-7d063ef2aed5" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <body>
-        <div class="navbar">
-            <div class="logo">
-                The<span class="log">Culinary</span>House
-            </div>
-            <ul class="navlist">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li><a href="./Menu.html">Menu</a></li>
-                <li><a href="./gallary.html">Gallary</a></li>
-                <li><a href="./Reservation.html">Book</a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="logo">
+            The<span class="log">Culinary</span>House
         </div>
-    <h1>Discover Our <span>Culinary</span> Art: A Visual Feast at The Culinary House</h1>
-    <div class="img_gallary">
-        <img src="Images/ggg1.jpg" alt="1_pic">
-        <img src="Images/ggg3.jpg" alt="2_pic">
-        <img src="Images/ggg4.jpg" alt="3_pic">
-        <img src="Images/ggg5.jpg" alt="4_pic">
-        <img src="Images/ggg6.jpg" alt="5_pic">
-        <img src="Images/ggg7.jpg" alt="6_pic">
-        <img src="Images/ggg11.jpg" alt="7_pic">
-         <img src="Images/ggg12.jpg" alt="8_pic">
-         <img src="Images/ggg13.jpg" alt="9_pic">
-         <img src="Images/ggg14.jpg" alt="10_pic">
-         <img src="Images/ggg15.jpg" alt="11_pic">
-         <img src="Images/ggg16.jpg" alt="12_pic">
-    </div>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallary.html">Gallery</a></li>
+            <li><a href="reservation.html">Book</a></li>
+        </ul>
+    </nav>
+
+    <main class="gallery-container">
+        <div class="heading">
+            <h1>Our Culinary <span>Masterpieces</span></h1>
+            <p class="subtitle">A Visual Journey Through Our Kitchen</p>
+            <div class="heading-line"></div>
+        </div>
+
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="dishes">Signature Dishes</button>
+            <button class="filter-btn" data-filter="ambiance">Ambiance</button>
+            <button class="filter-btn" data-filter="events">Special Events</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="dishes">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Signature Dish">
+                <div class="overlay">
+                    <h3>Signature Steak</h3>
+                    <p>Premium cut with herb butter</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="ambiance">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Restaurant Interior">
+                <div class="overlay">
+                    <h3>Elegant Dining</h3>
+                    <p>Modern comfort meets style</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="dishes">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Gourmet Pizza">
+                <div class="overlay">
+                    <h3>Artisan Pizza</h3>
+                    <p>Wood-fired perfection</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" alt="Special Event">
+                <div class="overlay">
+                    <h3>Private Events</h3>
+                    <p>Memorable celebrations</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="dishes">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Healthy Salad">
+                <div class="overlay">
+                    <h3>Garden Fresh</h3>
+                    <p>Seasonal ingredients</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="ambiance">
+                <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17" alt="Bar Area">
+                <div class="overlay">
+                    <h3>Craft Bar</h3>
+                    <p>Signature cocktails</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="https://images.unsplash.com/photo-1555244162-803834f70033" alt="Chef Table">
+                <div class="overlay">
+                    <h3>Chef's Table</h3>
+                    <p>Exclusive dining experience</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="dishes">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Dessert">
+                <div class="overlay">
+                    <h3>Sweet Endings</h3>
+                    <p>Handcrafted desserts</p>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
-        <div class="footer_container">
-            <div class="contact_section">
+        <div class="footer-container">
+            <div class="footer-section">
                 <h4>Contact Information</h4>
-                <p>Address:S-120,Kulakpurnagar Satyanashi Road,Narak</p>
-                <p>Phone:322421253,3673582564</p>
-                <p>Email:Narak1@gmail.com</p>
+                <p>📍 S-120, Kulakpurnagar Satyanashi Road, Narak</p>
+                <p>📞 322421253, 3673582564</p>
+                <p>✉️ Narak1@gmail.com</p>
             </div>
-        
-        <div class="openingclosing_section">
-            <h4>Opening Hours</h4>
-            <p>Monday-Friday:6:00AM-10:00PM</p>
-            <P>saturday-Sunday:24Hrs Open</P>
-        </div>
-        <div class="socialmedia_section">
-            <h4>Follow Us</h4>
-            <ul>
-                <li><a href="facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="www.linkedin.com" target="_blank">Linkedin</a></li>
-            </ul>
+            
+            <div class="footer-section">
+                <h4>Opening Hours</h4>
+                <p>Monday-Friday: 6:00 AM - 10:00 PM</p>
+                <p>Saturday-Sunday: 24Hrs Open</p>
+            </div>
+
+            <div class="footer-section social">
+                <h4>Follow Us</h4>
+             <div class="social-links">
+               <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+               <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+               <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+
+            </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2024 The Culinary House.All rights reserved.</p>
-        </div>
+            <p>&copy; 2024 The Culinary House. All rights reserved.</p>
         </div>
     </footer>
+  
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.dataset.filter;
+                    
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
