@@ -3,103 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menu - The Culinary House</title>
     <link rel="stylesheet" href="style2.css">
-    <link rel="icon"  href="/Images/Logo1.png" type="image/png">
+    <link rel="icon" href="https://images.unsplash.com/photo-1514326640560-7d063ef2aed5" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
+    <nav class="navbar">
         <div class="logo">
             The<span class="log">Culinary</span>House
         </div>
         <ul class="navlist">
             <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Menu.html">Menu</a></li>
-            <li><a href="gallary.html">Gallery</a></li>
-            <li><a href="Reservation.html">Book</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reservation.html">Book</a></li>
         </ul>
-    </div>
-    <div class="container">
+    </nav>
+
+    <main class="menu-container">
         <div class="heading">
-            <h1> &mdash; The <span>Culinarious</span> Menu &mdash; </h1>
-            <h3>Where Flavor Meets Quality</h3>
+            <h1>Our <span>Signature</span> Menu</h1>
+            <p class="subtitle">Where Culinary Excellence Meets Innovation</p>
+            <div class="heading-line"></div>
+        </div>
+
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="starters">Starters</button>
+            <button class="category-btn" data-category="mains">Main Course</button>
+            <button class="category-btn" data-category="desserts">Desserts</button>
         </div>
        
-        <div class="food">
-
-        <div class="foodie" data-name="f1">
-        <img src="Images/ff1.jpg" alt="burger">
-        <h3>Burger</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti libero unde nobis quibusdam officiis veniam soluta commodi ut assumenda, eos dignissimos minima reiciendis iste, voluptatem delectus voluptas eligendi, natus dolorum.</p>
-        <div class="price">$20</div>
-        </div>
-
-        <div class="foodie" data-name="f2">
-        <img src="Images/ff9.jpg" alt="Antipasti">
-        <h3>Antipasti</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorum ipsa officiis nostrum veritatis sit ut harum sint officia consectetur. Unde sequi, officia doloremque tenetur cupiditate dolorem repudiandae quis vel.</p>
-        <div class="price">$20</div>
-        </div>
-
-        <div class="foodie" data-name="f3">
-        <img src="Images/ff3.jpg" alt="Pizza">
-        <h3>Pizza</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque tempore nihil iste, deleniti dignissimos aspernatur nostrum magni omnis atque perferendis veniam esse sint nisi expedita laudantium ab provident ducimus! Ab.</p>
-        <div class="price">$20</div>
-        </div>
-        
-            <div class="foodie" data-name="f4">
-        <img src="Images/ff12.jpg" alt="Sfogliatella">
-        <h3>Sfogliatella</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusantium ea quasi fuga tempore a dolor cumque eveniet voluptatum aspernatur, maxime in obcaecati esse veniam, repudiandae quis saepe dolores necessitatibus?</p>
-        <div class="price">$20</div>
-        </div>
-
-        <div class="foodie" data-name="f5">
-        <img src="Images/ff11.jpg" alt="Diavola">
-        <h3>Diavola</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusantium ea quasi fuga tempore a dolor cumque eveniet voluptatum aspernatur, maxime in obcaecati esse veniam, repudiandae quis saepe dolores necessitatibus?</p>
-        <div class="price">$20</div>
-        </div>
-
-         <div class="foodie" data-name="f6">
-        <img src="Images/ff10.jpg" alt="Saltimbocca">
-        <h3>Saltimbocca</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusantium ea quasi fuga tempore a dolor cumque eveniet voluptatum aspernatur, maxime in obcaecati esse veniam, repudiandae quis saepe dolores necessitatibus?</p>
-        <div class="price">$20</div>
-        </div>
-        </div>
-       </div>
-       <footer>
-        <div class="footer_container">
-            <div class="contact_section">
-                <h4>Contact Information</h4>
-                <p>Address:S-120,Kulakpurnagar Satyanashi Road,Narak</p>
-                <p>Phone:322421253,3673582564</p>
-                <p>Email:Narak1@gmail.com</p>
+        <div class="menu-grid">
+            <div class="menu-item" data-category="starters">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1550317138-10000687a72b" alt="Antipasti">
+                    <div class="price-tag">$24</div>
+                </div>
+                <div class="menu-item-content">
+                    <h3>Antipasti Platter</h3>
+                    <p>A curated selection of Italian cured meats, artisanal cheeses, marinated vegetables, and fresh bread.</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
             </div>
-        
-        <div class="openingclosing_section">
-            <h4>Opening Hours</h4>
-            <p>Monday-Friday:6:00AM-10:00PM</p>
-            <P>saturday-Sunday:24Hrs Open</P>
+
+            <div class="menu-item" data-category="mains">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza">
+                    <div class="price-tag">$28</div>
+                </div>
+                <div class="menu-item-content">
+                    <h3>Artisanal Pizza</h3>
+                    <p>Wood-fired pizza with San Marzano tomatoes, fresh mozzarella, basil, and extra virgin olive oil.</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="mains">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
+                    <div class="price-tag">$26</div>
+                </div>
+                <div class="menu-item-content">
+                    <h3>Gourmet Burger</h3>
+                    <p>Premium beef patty with aged cheddar, caramelized onions, and house-made special sauce.</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="desserts">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Dessert">
+                    <div class="price-tag">$18</div>
+                </div>
+                <div class="menu-item-content">
+                    <h3>Tiramisu</h3>
+                    <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="starters">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Salad">
+                    <div class="price-tag">$16</div>
+                </div>
+                <div class="menu-item-content">
+                    <h3>Garden Fresh Salad</h3>
+                    <p>Seasonal greens with heirloom tomatoes, candied walnuts, and balsamic reduction.</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="desserts">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814" alt="Cheesecake">
+                    <div class="price-tag">$15</div>
+                </div>
+                <div class="menu-item-content">
+                    <h3>New York Cheesecake</h3>
+                    <p>Rich and creamy cheesecake with fresh berry compote and whipped cream.</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
         </div>
-        <div class="socialmedia_section">
-            <h4>Follow Us</h4>
-            <ul>
-                <li><a href="facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="www.linkedin.com" target="_blank">Linkedin</a></li>
-            </ul>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p>📍 S-120, Kulakpurnagar Satyanashi Road, Narak</p>
+                <p>📞 322421253, 3673582564</p>
+                <p>✉️ Narak1@gmail.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Opening Hours</h4>
+                <p>Monday-Friday: 6:00 AM - 10:00 PM</p>
+                <p>Saturday-Sunday: 24Hrs Open</p>
+            </div>
+
+            <div class="footer-section social">
+                <h4>Follow Us</h4>
+             <div class="social-links">
+               <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+               <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+               <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+
+            </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2024 The Culinary House.All rights reserved.</p>
-        </div>
+            <p>&copy; 2024 The Culinary House. All rights reserved.</p>
         </div>
     </footer>
-        
-  
+   
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const category = btn.dataset.category;
+                    
+                    menuItems.forEach(item => {
+                        if (category === 'all' || item.dataset.category === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
