@@ -1,187 +1,302 @@
-      *{
-        margin: 0;
-        padding: 0;
-       }
-     
-    .logo{
-        font-size:2rem;
-        color:white;
-        letter-spacing: 0.08rem;
-    }
-    .logo span{
-        font-size:2.5rem;
-        color:red;
-        font-family: cursive;
-    }
-    .navbar{
-    
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        position: fixed;
-        top:0;
-        left:50%;
-        transform: translatex(-50%);
-        width:90%;
-        height:12vh;
-    
-    }
-    .navlist{
-        display: flex;
-        gap:2rem;
-       
-    }
-    .navlist li{
-        list-style: none;
-        border-bottom: 0.125rem solid transparent;
-        transition: 0.2s ease;
-      
-    }
-    .navlist li:hover{
-        border-bottom: 0.125rem solid white;
-        transition: 0.2s ease;
-      
-    }
-    .navlist li a{
-        text-decoration: none;
-        color:white;
-        font-size: 1rem;
-        letter-spacing: 0.08rem;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-
-
-body{
-
-            font-family: sans-serif;
-            background-color: black;  
-       }
-    h1{
-        color:white;
-        font-size: 3.75rem;
-        text-align: center;
-        margin-top: 2.188rem;
-        padding-top:4rem;
-    }
-    
-    span{
-        color:red;
-        font-family: cursive;
-        font-size: 5rem;
-    }
-    .container{
-       
-        margin-top: 3.125rem;
-        max-width:34.375rem; 
-        padding: 0.313rem 31.25rem;
-        color:white;
-     
-    }
-    h2{
-        color:white;
-        text-align:center;
-        margin-bottom: 2rem auto;
-        font-size: 2rem;
-      
-    }
-    
-    .form{
-        margin-bottom: 1.5rem;
-    }
-    .form label{
-        display:block;
-        font-size:1.1rem;
-        margin-bottom:0.5rem;
-    }
-   .form textarea{
-        width:100%;
-        padding:0.75rem;
-        border: 0.063rem solid red;
-        border-style:outset;
-        resize: vertical;
-    }
-    .form input{
-        width:100%;
-        padding:0.75rem;
-        border: 0.063rem solid red;
-        border-style:outset;
-    }
-    .submit_btn{
-        display:block;
-        width:100%;
-        background-color: red;
-        color:black;
-        border: none;
-        padding: 1rem;
-        font-size: 1.2rem;
-        cursor:pointer;
-        border-radius:1.875rem;
-
-    }
-    .submit_btn:hover{
-        background-color: rgb(115, 13, 13);
-        box-shadow: 0rem 0.25rem 0.5rem red;
-    }
-    .footer_section{
-        margin:0.625rem;
-        flex: 1;
-        min-width: 12.5rem;
-    }
-    .footer_container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1.25rem;
+body {
     background-color: black;
-    color:white;
- }
- .footer_section h4{
-    margin-bottom:0.625rem;
- }
-.footer_section p{
-    margin: 0.313rem;
+    color: white;
+    line-height: 1.6;
 }
-.footer_section ul{
-    margin: 0.313rem;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
 }
-.socialmedia_section ul{
-list-style: none;
-padding: 0.313rem;
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
 }
-.socialmedia_section ul li{
-    display: inline;
-    margin-right:0.938rem;
+
+.log {
+    color: #ff4444;
+    font-family: cursive;
+    font-size: 2.5rem;
 }
-.socialmedia_section ul li a{
-    color:blue;
+
+.navlist {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navlist a {
+    color: white;
     text-decoration: none;
-}
-.copyright{
-    text-align:center;
-    flex-basis:100%;
-    margin-top:1.25rem;
+    font-size: 1.1rem;
+    position: relative;
+    padding-bottom: 5px;
 }
 
+.navlist a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff4444;
+    transition: width 0.3s;
+}
 
+.navlist a:hover::after,
+.navlist a.active::after {
+    width: 100%;
+}
 
+.hero {
+    padding: 120px 5% 80px;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
+.heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
 
+.heading h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff4444, #ff8844);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.heading-line {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4444, #ff8844);
+    margin: 0 auto;
+    border-radius: 2px;
+}
 
+.reservation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(17, 17, 17, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 68, 68, 0.2);
+    backdrop-filter: blur(10px);
+}
 
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
 
+.form-group {
+    margin-bottom: 20px;
+}
 
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ff4444;
+    font-weight: 500;
+}
 
+.input-with-icon {
+    position: relative;
+}
 
+.input-with-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
 
+.textarea-icon i {
+    top: 25px;
+}
 
+.input-with-icon input,
+.input-with-icon select,
+.input-with-icon textarea {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
 
+.input-with-icon textarea {
+    min-height: 120px;
+    padding-top: 15px;
+}
 
+.input-with-icon input:focus,
+.input-with-icon select:focus,
+.input-with-icon textarea:focus {
+    border-color: #ff4444;
+    box-shadow: 0 0 0 2px rgba(255, 68, 68, 0.2);
+    outline: none;
+}
 
+.full-width {
+    grid-column: 1 / -1;
+}
 
+.submit-group {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.cta-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    background: linear-gradient(45deg, #ff4444, #ff8844);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
+.cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 68, 68, 0.3);
+}
 
+footer {
+    background-color: #111;
+    padding: 60px 5% 30px;
+}
 
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
+.footer-section h4 {
+    color: #ff4444;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.footer-section p i {
+    color: #ff4444;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    background: #222;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background: #ff4444;
+}
+
+.copyright {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    color: #888;
+}
+
+@media (max-width: 1024px) {
+    .heading h1 {
+        font-size: 3rem;
+    }
+
+    .reservation-container {
+        margin: 0 20px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .heading h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .reservation-container {
+        padding: 20px;
+    }
+
+    .input-with-icon input,
+    .input-with-icon select,
+    .input-with-icon textarea {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
